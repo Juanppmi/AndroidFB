@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "179556169821",
+    "project_id": "androidfb-99951",
+    "storage_bucket": "androidfb-99951.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:179556169821:android:bf2e2b8426b0a385a275b4",
+        "android_client_info": {
+          "package_name": "com.aprendendo.androidfb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "179556169821-i4gpkig3i1gogoulrio3f05u7o2v9li8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmpoIiwI298OE_68zS_B1BD5SoAkLZf6Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "179556169821-i4gpkig3i1gogoulrio3f05u7o2v9li8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

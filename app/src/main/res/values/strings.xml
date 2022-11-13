@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AndroidFB</string>
+    <string name="usuario">Usuário</string>
+    <string name="senha">Senha</string>
+    <string name="entrar">Entrar</string>
+    <string name="novo_usuario">Novo usuário? Cadastre-se aqui.</string>
+    <string name="nome">Nome</string>
+    <string name="confirmar_senha">Confirmar senha</string>
+    <string name="email">E-mail</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="possui_conta">Já possui uma conta? Entre aqui.</string>
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CadastrarUsuarioActivity">
+
+    <TextView
+        android:id="@+id/tvCUsuario"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/nome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtCNome"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/tvCUsuario"
+        app:layout_constraintStart_toStartOf="@+id/tvCUsuario"
+        app:layout_constraintTop_toBottomOf="@+id/tvCUsuario" />
+
+    <TextView
+        android:id="@+id/tvCEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/email"
+        app:layout_constraintEnd_toEndOf="@+id/edtCNome"
+        app:layout_constraintStart_toStartOf="@+id/edtCNome"
+        app:layout_constraintTop_toBottomOf="@+id/edtCNome" />
+
+    <EditText
+        android:id="@+id/edtCEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/tvCEmail"
+        app:layout_constraintStart_toStartOf="@+id/tvCEmail"
+        app:layout_constraintTop_toBottomOf="@+id/tvCEmail" />
+
+    <TextView
+        android:id="@+id/tvCSenha"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/senha"
+        app:layout_constraintEnd_toEndOf="@+id/edtCEmail"
+        app:layout_constraintStart_toStartOf="@+id/edtCEmail"
+        app:layout_constraintTop_toBottomOf="@+id/edtCEmail" />
+
+    <EditText
+        android:id="@+id/edtCSenha"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/tvCSenha"
+        app:layout_constraintStart_toStartOf="@+id/tvCSenha"
+        app:layout_constraintTop_toBottomOf="@+id/tvCSenha" />
+
+    <TextView
+        android:id="@+id/tvCConfirmarSenha"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/confirmar_senha"
+        app:layout_constraintEnd_toEndOf="@+id/edtCSenha"
+        app:layout_constraintStart_toStartOf="@+id/edtCSenha"
+        app:layout_constraintTop_toBottomOf="@+id/edtCSenha" />
+
+    <EditText
+        android:id="@+id/edtCConfirmarSenha"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/tvCConfirmarSenha"
+        app:layout_constraintStart_toStartOf="@+id/tvCConfirmarSenha"
+        app:layout_constraintTop_toBottomOf="@+id/tvCConfirmarSenha" />
+
+    <Button
+        android:id="@+id/btnCCadastrar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/cadastrar"
+        app:layout_constraintEnd_toEndOf="@+id/edtCConfirmarSenha"
+        app:layout_constraintStart_toStartOf="@+id/edtCConfirmarSenha"
+        app:layout_constraintTop_toBottomOf="@+id/edtCConfirmarSenha" />
+
+    <TextView
+        android:id="@+id/tvPossuiConta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/possui_conta"
+        app:layout_constraintEnd_toEndOf="@+id/btnCCadastrar"
+        app:layout_constraintStart_toStartOf="@+id/btnCCadastrar"
+        app:layout_constraintTop_toBottomOf="@+id/btnCCadastrar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
