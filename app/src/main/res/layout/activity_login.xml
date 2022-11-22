@@ -6,71 +6,71 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
 
-    <TextView
-        android:id="@+id/tvLUsuario"
+    <View
+        android:id="@+id/containerComponents2"
+        style="@style/ContainerComponents"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="24dp"
-        android:text="@string/usuario"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="320dp"
+        android:layout_marginTop="28dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <EditText
         android:id="@+id/edtLUsuario"
+        style="@style/Edit_Text"
         android:layout_width="0dp"
         android:layout_height="70dp"
-        android:layout_marginTop="24dp"
+        android:drawableRight="@drawable/ic_baseline_email_24"
         android:ems="10"
         android:inputType="textEmailAddress"
-        app:layout_constraintEnd_toEndOf="@+id/tvLUsuario"
-        app:layout_constraintStart_toStartOf="@+id/tvLUsuario"
-        app:layout_constraintTop_toBottomOf="@+id/tvLUsuario" />
-
-    <TextView
-        android:id="@+id/tvLSenha"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="@string/senha"
-        app:layout_constraintEnd_toEndOf="@+id/edtLUsuario"
-        app:layout_constraintStart_toStartOf="@+id/edtLUsuario"
-        app:layout_constraintTop_toBottomOf="@+id/edtLUsuario" />
+        app:layout_constraintEnd_toEndOf="@+id/containerComponents2"
+        app:layout_constraintStart_toStartOf="@+id/containerComponents2"
+        app:layout_constraintTop_toTopOf="@+id/containerComponents2" />
 
     <EditText
         android:id="@+id/edtLSenha"
+        style="@style/Edit_Text"
         android:layout_width="0dp"
         android:layout_height="70dp"
-        android:layout_marginTop="24dp"
+        android:drawableRight="@drawable/ic_senha"
         android:ems="10"
         android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="@+id/edtLUsuario"
-        app:layout_constraintStart_toStartOf="@+id/edtLUsuario"
-        app:layout_constraintTop_toBottomOf="@+id/tvLSenha" />
+        app:layout_constraintEnd_toEndOf="@+id/containerComponents2"
+        app:layout_constraintStart_toStartOf="@+id/containerComponents2"
+        app:layout_constraintTop_toBottomOf="@+id/edtLUsuario" />
 
     <Button
         android:id="@+id/btnLEntrar"
+        style="@style/Button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="24dp"
         android:text="@string/entrar"
-        app:layout_constraintEnd_toEndOf="@+id/edtLSenha"
-        app:layout_constraintStart_toStartOf="@+id/edtLSenha"
+        app:layout_constraintEnd_toEndOf="@+id/containerComponents2"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="@+id/containerComponents2"
         app:layout_constraintTop_toBottomOf="@+id/edtLSenha" />
 
     <TextView
         android:id="@+id/tvLCadastrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="100dp"
         android:text="@string/novo_usuario"
         app:layout_constraintEnd_toEndOf="@+id/btnLEntrar"
         app:layout_constraintStart_toStartOf="@+id/btnLEntrar"
         app:layout_constraintTop_toBottomOf="@+id/btnLEntrar" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_lock_24" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
