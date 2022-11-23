@@ -25,6 +25,7 @@
         android:drawableRight="@drawable/ic_baseline_email_24"
         android:ems="10"
         android:inputType="textEmailAddress"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="@+id/containerComponents2"
         app:layout_constraintStart_toStartOf="@+id/containerComponents2"
         app:layout_constraintTop_toTopOf="@+id/containerComponents2" />
@@ -37,6 +38,7 @@
         android:drawableRight="@drawable/ic_senha"
         android:ems="10"
         android:inputType="textPassword"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="@+id/containerComponents2"
         app:layout_constraintStart_toStartOf="@+id/containerComponents2"
         app:layout_constraintTop_toBottomOf="@+id/edtLUsuario" />
